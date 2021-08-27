@@ -1,4 +1,7 @@
+#gitignore
 node_modules
 package.json
 json.sqlite
-./src/config/config.json
+config.json
+
+!/src/config
