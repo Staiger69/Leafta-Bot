@@ -16,6 +16,7 @@ module.exports = {
             const info = message.client.commands.filter(x => x.category == 'Info').map((x) => '`' + x.name + '`').join(', ');
             const roleplay = message.client.commands.filter(x => x.category == 'Roleplay').map((x) => '`' + x.name + '`').join(', ');
             const fun = message.client.commands.filter(x => x.category == 'Fun').map((x) => '`' + x.name + '`').join(', ');
+            const music = message.client.commands.filter(x => x.category == 'Music').map((x) => '`' + x.name + '`').join(', ');
 
             const embed1 = new MessageEmbed()
             .setTitle('Help Panel')
@@ -32,7 +33,13 @@ module.exports = {
             .setThumbnail(sh.logo)
             .setColor(sh.color)
             .setTimestamp()
-            
+
+            const embed3 = new MessageEmbed()
+            .setTitle('Help Panel')
+            .addField('Music', music)
+            .setThumbnail(sh.logo)
+            .setColor(sh.color)
+            .setTimestamp()
 
             const embedn = new MessageEmbed()
             .setTitle('Help Panel')
@@ -49,6 +56,7 @@ module.exports = {
             pages = [
                 embed1,
                 embed2,
+                embed3,
                 embedn
             ];
 
