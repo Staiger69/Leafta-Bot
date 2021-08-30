@@ -1,0 +1,15 @@
+{
+  "name": "leaftabot-v1.0.0",
+  "version": "1.0.0",
+  "description": "Leafta Bot est bot basé sur la discord.js@12.5.0",
+  "main": "index.js",
+  "dependencies": {
+    "discord-player": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LeaftaProject",
+  "license": "ISC"
+}
